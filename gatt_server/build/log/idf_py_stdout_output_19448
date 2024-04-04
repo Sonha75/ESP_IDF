@@ -1,0 +1,112 @@
+[0;32mI�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar  7 2024 23:44:24[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2090ch (133388) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00030934 vaddr=3ffbdb60 size=048c0h ( 18624) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=000351fc vaddr=40080000 size=0ae1ch ( 44572) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=81c1ch (531484) map[0m
+[0;32mI (371) esp_image: segment 4: paddr=000c1c44 vaddr=4008ae1c size=0d9a4h ( 55716) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (419) cpu_start: Pro cpu up.[0m
+[0;32mI (419) cpu_start: Starting app cpu, entry point is 0x4008137c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) cpu_start: Application information:[0m
+[0;32mI (442) cpu_start: Project name:     gatt_server_demos[0m
+[0;32mI (448) cpu_start: App version:      1[0m
+[0;32mI (452) cpu_start: Compile time:     Mar  7 2024 23:43:54[0m
+[0;32mI (458) cpu_start: ELF file SHA256:  f43a86828177111c...[0m
+[0;32mI (464) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (470) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (474) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (479) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (484) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (491) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (503) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (509) heap_init: At 3FFC6F78 len 00019088 (100 KiB): DRAM[0m
+[0;32mI (516) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (522) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 400987C0 len 00007840 (30 KiB): IRAM[0m
+[0;32mI (536) spi_flash: detected chip: generic[0m
+[0;32mI (539) spi_flash: flash io: dio[0m
+[0;33mW (543) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (557) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (562) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (617) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (627) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (627) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (1027) SonHa_Ble: REGISTER_APP_EVT, status 0, app_id 0
+[0m
+[0;32mI (1037) main_task: Returned from app_main()[0m
+[0;32mI (1037) SonHa_Ble: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (1057) SonHa_Ble: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (1057) SonHa_Ble: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (1057) SonHa_Ble: the gatts demo char length = 3
+[0m
+[0;32mI (1067) SonHa_Ble: prf_char[0] =11
+[0m
+[0;32mI (1067) SonHa_Ble: prf_char[1] =22
+[0m
+[0;32mI (1077) SonHa_Ble: prf_char[2] =33
+[0m
+[0;32mI (1077) SonHa_Ble: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (31277) SonHa_Ble: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 50:72:51:02:f1:c5:[0m
+[0;32mI (31947) SonHa_Ble: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 18,latency = 0, timeout = 400[0m
+[0;32mI (32267) SonHa_Ble: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (32637) SonHa_Ble: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 18,latency = 0, timeout = 400[0m
+[0;32mI (38797) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 1, handle 43[0m
+[0;32mI (38797) SonHa_Ble: GATT_WRITE_EVT, value len 2, value :[0m
+[0;32mI (38797) MAIN: 01 00 [0m
+[0;32mI (38797) SonHa_Ble: notify enable[0m
+[0;32mI (38807) SonHa_Ble: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (57807) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 2, handle 42[0m
+[0;32mI (57807) SonHa_Ble: GATT_WRITE_EVT, value len 8, value :[0m
+[0;32mI (57807) MAIN: 61 6c 6f 31 32 33 34 35 [0m
+[0;32mI (57817) SonHa_Ble: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m
+[0;32mI (97657) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (97697) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 4, handle 42[0m
+[0;32mI (97747) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 5, handle 42[0m
+[0;32mI (97787) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 6, handle 42[0m
+[0;32mI (97837) SonHa_Ble: GATT_WRITE_EVT, conn_id 0, trans_id 7, handle 42[0m
+[0;32mI (97877) SonHa_Ble: ESP_GATTS_EXEC_WRITE_EVT[0m
+[0;32mI (97877) MAIN: 71 6c 6f 61 6c 61 6f 73 6b 64 6b 6d 64 6e 66 6a [0m
+[0;32mI (97877) MAIN: 64 6b 64 6b 73 6b 73 6b 73 73 6b 31 31 31 31 31 [0m
+[0;32mI (97887) MAIN: 31 31 31 31 32 32 32 32 32 32 32 32 32 32 32 33 [0m
+[0;32mI (97897) MAIN: 32 33 33 33 33 33 33 33 33 33 33 33 33 34 34 34 [0m
+[0;32mI (97897) MAIN: 34 34 34 34 34 34 34 34 34 35 35 35 35 35 35 35 [0m
+[0;32mI (97907) MAIN: 35 35 35 35 35 35 35 [0m
+[0;32mI (97917) SonHa_Ble: ESP_GATTS_CONF_EVT, status 0 attr_handle 42[0m

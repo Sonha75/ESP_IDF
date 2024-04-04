@@ -1,0 +1,77 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP_IDF\gatt_server\build\bootloader\esp-idf\esptool_py && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP_IDF/gatt_server/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable gatt_server_demos.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/gatt_server/build/gatt_server_demos.bin
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\gatt_server\build\esp-idf\esptool_py && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP_IDF/gatt_server/build/partition_table/partition-table.bin D:/ESP_IDF/gatt_server/build/gatt_server_demos.bin"
+gatt_server_demos.bin binary size 0xbf610 bytes. Smallest app partition is 0x100000 bytes. 0x409f0 bytes (25%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP_IDF/gatt_server/build -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 gatt_server_demos.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port COM5
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:a7:32:28:23:8c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000cffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16693...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768a... (100 %)
+Wrote 26640 bytes (16693 compressed) at 0x00001000 in 0.5 seconds (effective 399.8 kbit/s)...
+Hash of data verified.
+Compressed 783888 bytes to 465345...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001dd46... (6 %)
+Writing at 0x0002a750... (10 %)
+Writing at 0x00036c66... (13 %)
+Writing at 0x0003c2e3... (17 %)
+Writing at 0x000424cd... (20 %)
+Writing at 0x00047be0... (24 %)
+Writing at 0x0004d7ad... (27 %)
+Writing at 0x00052e8d... (31 %)
+Writing at 0x000584ed... (34 %)
+Writing at 0x0005dfe3... (37 %)
+Writing at 0x00063817... (41 %)
+Writing at 0x00069ddb... (44 %)
+Writing at 0x0006fe1c... (48 %)
+Writing at 0x00075e8f... (51 %)
+Writing at 0x0007ba7a... (55 %)
+Writing at 0x00081819... (58 %)
+Writing at 0x00087786... (62 %)
+Writing at 0x0008d65d... (65 %)
+Writing at 0x000939e5... (68 %)
+Writing at 0x00099815... (72 %)
+Writing at 0x0009f3b5... (75 %)
+Writing at 0x000a4f11... (79 %)
+Writing at 0x000aa6da... (82 %)
+Writing at 0x000b385e... (86 %)
+Writing at 0x000b9c00... (89 %)
+Writing at 0x000c15ea... (93 %)
+Writing at 0x000c721a... (96 %)
+Writing at 0x000ccf4b... (100 %)
+Wrote 783888 bytes (465345 compressed) at 0x00010000 in 10.6 seconds (effective 592.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1204.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
